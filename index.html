@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+
+<style>
+.frm_div{
+    width: 500px;
+    margin: auto;
+    border: 1px solid rgb(201, 197, 197);
+    height: 500px;
+    margin-top: 20px;
+    padding: 20px;
+
+}
+.frm_div label{
+    font-size: 20px;
+}
+.frm_div input{
+    width: 95%;
+    margin: auto;
+    margin: 4px 0px;
+    padding: 8px;
+    margin-bottom: 15px;
+
+}
+.sbtn{
+    width: 99% !important;
+    
+}
+span{
+    color: red;
+}
+
+</style>
+</head>
+<body>
+    
+   
+      
+<div class="frm_div">
+
+
+    <form action="#"autocomplete="on">
+        <label for="fname">First name :</label>
+        <input type="text" id="fname" name="fname"placeholder="Enter your first name">
+
+        <label for="lname">Last name :</label>
+        <input type="text" id="lname" name="lname"placeholder="Enter your last name">
+
+        <label for="username"><span>*</span>Username :</label>
+        <input type="text" id="username" name="username"placeholder="Enter your username" required autofocus>
+
+
+        <label for="email"><span>*</span>Email :</label>
+        <input type="email" id="email" name="email"placeholder="Enter your email" required>
+        
+        <label for="phonenumber">Phone number :</label>
+        <input type="text" id="phonenumber" name="phonenumber"placeholder="Enter your phone number"value="+880">
+
+        <label for="pwd"><span>*</span>Password :</label>
+        <input type="password" id="username" name="pwd"placeholder="Enter your password" required autocomplete="off">
+
+        <input type="submit"class="sbtn" value="Submit">
+      </form>
+
+</div>
+
+
+
+
+
+<script type="text/javascript">
+(function(){
+var fname = document.getElementById("fname");
+var lname = document.getElementById("lname");
+var username = document.getElementById("username");
+lname.addEventListener('click',function(){
+    if(this.click){
+        fname.disabled = 'false';
+    }else{
+        fname.disabled = ' ';  
+    }
+});
+username.addEventListener('click',function(){
+    if(this.click){
+        lname.disabled = 'false';
+    }else{
+        lname.disabled = ' ';  
+    }
+});
+})();
+
+
+</script>
+</body>
+</html>
