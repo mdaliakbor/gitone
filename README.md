@@ -1,5 +1,5 @@
 # gitone
-This is git one
+Input Form
 
 
 https://mdaliakbor.github.io/gitone/
